@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>SOLTRADINGBOT</title>
+
+    <!-- SEO meta tags -->
+   
+    <meta name="keywords" content="sol bot, SOLTRADINGBOT, trading bot, telegram bot, bot, bitcoin, blockchain, cryptocurrency, token">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic200.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://soltradingbot.com/assets/images/icons/assets/css/plugins.css" />
+    <link rel="stylesheet" href="https://soltradingbot.com/assets/images/icons/assets/css/style.css" />
+    <!-- <script type="text/javascript"
+        src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=UUDibdnOwoIeF0KaCr_KvHLH6LsS12PrEBz5zSdRddJzXpdYAIvKtnGUuIjuUBvRvqlXekg3MZaeZFFjgOdNdesWUZAlUukZo3lvCkG5cDY"
+        charset="UTF-8"></script> -->
+</head>
+
+<body>
+    <div class="wrapper d-flex flex-column justify-between">
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="Magic64.png.html#">
+                    <div class="d-flex align-center justify-center logo">
+                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic200.png" alt="" width="64" />
+                        <h4 class="mb-0 bold">SOLTRADINGBOT</h4>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="navbar-toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div
+                        class="navbar-content-inner ms-lg-auto d-flex flex-column flex-lg-row align-lg-center gap-4 gap-lg-10 p-2 p-lg-0">
+                        <ul class="navbar-nav gap-lg-2 gap-xl-5">
+                            <li class="nav-item">
+                                <a class="nav-link " href="Magic64.png.html#home">Home</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link " href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#features">Features</a> -->
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="Magic64.png.html#roadmap">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://dune.com/whale_hunter/sol-trading-bot">Dune</a>
+                            </li>
+                          
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank"
+                                    href="https://soltradingbot.gitbook.io/docs/">Docs</a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <a href="https://t.me/SolTradingBot" class="btn btn-outline-primary-dark">BOT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main class="flex-grow-1">
+            <section id="home" class="hero-section style-2 position-relative bg-dark py-10 py-lg-15">
+                <div class="striped-shape">
+                    <img src="https://soltradingbot.com/assets/images/icons/assets/images/shapes/stripe-dark.svg" alt="" />
+                </div>
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-lg-5">
+                            <div class="text-center text-lg-start position-relative z-1">
+                                <p class="text-primary-dark copyButton" data-aos="fade-up-sm" data-aos-delay="50">
+                                    <span class="border px-4 py-2 rounded-3 d-inline-block"
+                                        onclick="copyContract()">Contract
+                                    </span>
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt"
+                                        height="20.000000pt" preserveAspectRatio="xMidYMid meet">
+
+                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                            fill="#fff" stroke="none">
+                                            <path d="M2358 5064 c-187 -45 -338 -198 -383 -386 -12 -51 -15 -151 -15 -509
+0 -522 0 -520 -84 -605 -84 -83 -89 -84 -555 -84 -374 0 -397 1 -436 20 -47
+23 -85 80 -85 127 0 75 9 83 409 425 212 180 396 343 409 360 13 19 22 45 22
+69 0 76 -89 137 -157 107 -38 -16 -787 -651 -837 -710 -56 -65 -79 -137 -80
+-243 0 -126 25 -188 113 -276 48 -48 82 -72 126 -90 60 -24 62 -24 492 -27
+479 -3 512 0 627 60 78 41 172 136 213 214 60 113 63 142 63 635 0 522 0 520
+84 605 89 88 38 84 976 84 938 0 887 4 976 -84 92 -93 84 114 84 -2196 0
+-2310 8 -2103 -84 -2196 -92 -91 49 -84 -1676 -84 -1725 0 -1584 -7 -1676 84
+-90 91 -84 -1 -84 1289 0 1007 -2 1133 -16 1162 -16 35 -65 65 -104 65 -39 0
+-88 -30 -104 -65 -14 -29 -16 -155 -16 -1172 0 -968 3 -1147 15 -1201 45 -191
+196 -342 387 -387 96 -22 3102 -22 3197 0 187 44 342 199 386 386 22 96 22
+4141 0 4237 -45 191 -196 342 -387 387 -90 21 -1713 21 -1800 -1z" />
+                                            <path d="M1865 2241 c-86 -22 -142 -79 -302 -308 -95 -136 -103 -150 -103
+-194 0 -58 37 -104 93 -114 63 -12 94 14 234 199 70 94 133 172 140 174 18 5
+94 -69 188 -183 164 -200 266 -268 399 -268 107 0 177 37 310 163 120 113 166
+137 218 109 27 -14 91 -14 118 1 29 15 60 69 60 103 0 36 -23 80 -52 99 -42
+27 -121 48 -180 48 -106 0 -178 -39 -333 -181 -49 -45 -104 -88 -122 -95 -60
+-26 -103 7 -259 198 -108 132 -180 198 -249 229 -49 21 -120 30 -160 20z" />
+                                            <path d="M3475 1791 c-45 -20 -70 -60 -70 -112 0 -42 5 -53 33 -81 28 -28 39
+-33 82 -33 43 0 54 5 82 33 28 28 33 39 33 82 0 42 -5 54 -31 81 -33 33 -92
+46 -129 30z" />
+                                        </g>
+                                    </svg>
+                                </p>
+                                <h1 class="text-white mb-8" data-aos="fade-up-sm" data-aos-delay="100">
+                                    Welcome To
+                                    <span class="text-primary-dark">SOLTRADINGBOT!</span>
+                                </h1>
+                                <p class="text-white mb-8" data-aos="fade-up-sm" data-aos-delay="100" style="word-break: break-word;">Get on a journey of precision trading with SolTradingBot! Integrating with Jupiter, Orca, and Radium on the Solana network, SolTradingBot is your go-to companion for decentralized exchange transactions.
+                                 <br/>
+                                 CA: 2x8o3hA5S5fBxCSE9hzVTf3RohcMWHqkDNKNEPuzprD5   
+                              </p>
+                                <!-- <form action="#" class="pe-xl-10" data-aos="fade-up-sm" data-aos-delay="150">
+                                    <div class="input-group with-icon">
+                                        <input type="email" class="form-control" placeholder="Enter Your Email" />
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                                <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="1.2">
+                                                    <path
+                                                        d="M2.25 5.25a1.5 1.5 0 0 1 1.5-1.5h10.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H3.75a1.5 1.5 0 0 1-1.5-1.5v-7.5Z" />
+                                                    <path d="M2.25 5.25 9 9.75l6.75-4.5" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <button class="btn btn-primary-dark px-4" type="button">
+                                            Sign Up Free
+                                        </button>
+                                    </div>
+
+                                </form> -->
+
+                                <div class="d-flex gap-8 align-center justify-center justify-lg-start mt-12 review-badges"
+                                    data-aos="fade-up-sm" data-aos-delay="200">
+                                    <a href="https://t.me/SolTradingBot" target="_blank"
+                                        class="btn btn-outline-primary-dark btn-sm">TG Bot</a>
+                                    <a href="https://t.me/SolTradingBot_Portal"
+                                        target="_blank" class="btn btn-outline-primary-dark btn-sm">Chat</a>
+                                    <!-- <a href=""
+                                        target="_blank" class="btn btn-outline-primary-dark btn-sm">Channel</a> -->
+                                    <a href="https://t.me/SolTradingBot_Channel"
+                                        target="_blank" class="btn btn-primary-dark btn-sm">Channel</a>
+                                    <!-- <img class="img-fluid" src="assets/images/review-logos/trustpilot_reviews.svg"
+                                        alt="" />
+                                    <img class="img-fluid" src="assets/images/review-logos/capterra_reviews.svg"
+                                        alt="" /> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7" data-aos="fade-up-sm" data-aos-delay="200">
+                            <div class="image-with-shape">
+                                <img src="https://soltradingbot.com/assets/images/icons/assets/images/shapes/blurry-shape-2.svg" alt="" class="shape animate-scale" />
+                                <!-- <div class="mt-12 rounded-4 border shadow-lg overflow-hidden"> -->
+                                <div class="mt-12 rounded-4 overflow-hidden" style="display: flex; align-items: center; justify-content: center;"
+                                    >
+                                    <img src="../../video/SolTradingBot.png" class="custom-banner" >
+                                </div>
+                                <!-- <img class="img-fluid d-inline-block" src="assets/images/screens/home.webp"
+                                        alt="" /> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section has-blurry-shape position-relative overflow-hidden py-10 py-lg-15 ">
+                <div class="blurry-shape">
+                    <img src="https://soltradingbot.com/assets/images/icons/assets/images/shapes/blurry-shape-3.svg" alt="" class="img-fluid" />
+                </div>
+                <div class="container">
+                    <div class="text-center mb-18">
+                        <h1 class="text-white mb-0" data-aos="fade-up-sm" data-aos-delay="50">
+                           Features <br class="d-none d-lg-block" />
+
+                        </h1>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-lg-3 g-6 g-xl-14">
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column flex-lg-row gap-6 hover-card-kh">
+                                <div
+                                    class="icon w-14 h-14 flex-shrink-0 d-flex align-center justify-center rounded-3 p-2 border bg-gradient-3 text-primary-dark border-white border-opacity-10">
+                                    <h4 class="mb-0">01</h4>
+                                </div>
+                                <div class="content scroll-text-container">
+                                    <h4 class="text-white mb-4 scroll-text">DEX Integration</h4>
+                                    <p class="scroll-text">
+                                       SolTradingBot effortlessly integrates with Solana's premier DEX platforms — Jupiter, Orca, and Radium. Trade with unparalleled ease and tap into the liquidity of these decentralized ecosystems. Your gateway to the Solana trading frontier starts here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column flex-lg-row gap-6 hover-card-kh">
+                                <div
+                                    class="icon w-14 h-14 flex-shrink-0 d-flex align-center justify-center rounded-3 p-2 border bg-gradient-3 text-primary-dark border-white border-opacity-10">
+                                    <h4 class="mb-0">02</h4>
+                                </div>
+                                <div class="content scroll-text-container">
+                                    <h4 class="text-white mb-4 scroll-text">Market Data Analysis</h4>
+                                    <p class="scroll-text">
+                                       SolTradingBot's robust market data analysis provides real-time insights into trends, price movements, and potential opportunities. Make informed decisions and stay ahead of the market curve. Precision trading starts with powerful analytics. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column flex-lg-row gap-6 hover-card-kh">
+                                <div
+                                    class="icon w-14 h-14 flex-shrink-0 d-flex align-center justify-center rounded-3 p-2 border bg-gradient-3 text-primary-dark border-white border-opacity-10">
+                                    <h4 class="mb-0">03</h4>
+                                </div>
+                                <div class="content scroll-text-container">
+                                    <h4 class="text-white mb-4 scroll-text">Sniper Monitor</h4>
+                                    <p class="scroll-text">
+                                       Get ready for SolTradingBot's upcoming feature — the Sniper Monitor. Execute trades with split-second accuracy, ensuring you never miss a lucrative opportunity. Precision meets performance in the world of decentralized finance. Stay tuned for the evolution of trading.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <a href="Magic64.png.html#" class="btn btn-primary-dark">Experience now</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="about" class="py-10 py-lg-15 ">
+                <div class="container">
+                    <div class="bg-dark-blue-4 rounded-4 p-6 p-md-12 px-xl-20 py-xl-12 hover-border mb-18">
+                        <div class="row g-6 g-lg-14 g-xl-20 align-center">
+                            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="50">
+                                <div class="content">
+                                    <!-- <p class="text-primary-dark">About Us 1</p> -->
+                                    <h1 class="text-white mb-8">
+                                       Mission
+                                    </h1>
+                                    <p class="mb-6">
+                                       
+                                            At SolTradingBot,
+                                            <strong
+                                            class="text-primary-dark">our mission is to democratize access to advanced trading tools on the Solana network, empowering users of all levels to navigate the decentralized finance landscape with confidence.</strong>
+                                             We are committed to providing a seamless and feature-rich platform that not only enhances trading strategies but also fosters a community of informed and empowered traders. Through cutting-edge technology and user-centric design, we aim to redefine the trading experience on Solana, making it accessible, efficient, and rewarding for every user.
+                                    </p>
+                                    <!-- <ul class="list-unstyled list-check mb-8">
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18"
+                                                class="icon">
+                                                <g>
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5"
+                                                        d="m3.75 9 3.75 3.75 7.5-7.5" />
+                                                </g>
+                                            </svg>
+                                            <span></span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18"
+                                                class="icon">
+                                                <g>
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5"
+                                                        d="m3.75 9 3.75 3.75 7.5-7.5" />
+                                                </g>
+                                            </svg>
+                                            <span></span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18"
+                                                class="icon">
+                                                <g>
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="1.5"
+                                                        d="m3.75 9 3.75 3.75 7.5-7.5" />
+                                                </g>
+                                            </svg>
+                                            <span></span>
+                                        </li>
+                                    </ul> -->
+                                    <a target="_blank" href="Magic64.png.html#"
+                                        class="arrow-link arrow-link-primary-dark text-primary-dark gap-3">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="200">
+                                <div class="feature-img">
+                                    <img src="https://soltradingbot.com/assets/images/icons/assets/video/img3.gif" loading="lazy" alt="" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark-blue-4 rounded-4 p-6 p-md-12 px-xl-20 py-xl-12 hover-border mb-18">
+                        <div class="row g-6 g-lg-14 g-xl-20 align-center flex-row-reverse">
+                            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="50">
+                                <div class="content">
+                                    <!-- <p class="text-primary-dark">About Us 2</p> -->
+                                    <h1 class="text-white mb-8">
+                                        Vision
+                                    </h1>
+                                    <p class="mb-6">
+                                       Our vision at SolTradingBot is to be the leading force in shaping the future of decentralized trading on the Solana network. We aspire to create a global community of traders who leverage our innovative features and tools to navigate the evolving DeFi space. As we evolve, we envision SolTradingBot as a symbol of precision and reliability, setting the standard for automated trading excellence. By staying at the forefront of technological advancements and user needs, we strive to contribute to the growth and sustainability of the decentralized financial ecosystem on Solana.
+                                    </p>
+                                    <a target="_blank" href="Magic64.png.html#"
+                                        class="arrow-link arrow-link-primary-dark text-primary-dark gap-3">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="100">
+                                <div class="feature-img">
+                                    <img src="https://soltradingbot.com/assets/images/icons/assets/images/illustrations/img1.png" loading="lazy" alt=""
+                                        class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+            <section id="features" class="pt-10 pt-lg-15 pb-20 pb-lg-30">
+                <div class="container">
+                    <div class="row justify-center mb-18">
+                        <div class="col-lg-9">
+                            <div class="text-center">
+                                <p class="text-primary-dark" data-aos="fade-up-sm" data-aos-delay="50">
+                                 SolTradingBot 
+                                </p>
+                                <h1 class="text-white mb-0" data-aos="fade-up-sm" data-aos-delay="100">
+                                 Ecosystem
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-center row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gx-8 gy-14">
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="50">
+                            <div class="d-flex flex-column justify-between gap-6 h-full text-center hover-card-fe">
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M13.333 35h13.334A8.333 8.333 0 0 0 35 26.667v-5a5 5 0 0 0-5-5h-1.667v-3.334A8.333 8.333 0 0 0 20 5h-6.667A8.333 8.333 0 0 0 5 13.333v13.334A8.333 8.333 0 0 0 13.333 35Z" />
+                                            <path
+                                                d="M11.667 14.167a2.5 2.5 0 0 1 2.5-2.5h5a2.5 2.5 0 1 1 0 5h-5a2.5 2.5 0 0 1-2.5-2.5Zm0 11.666a2.5 2.5 0 0 1 2.5-2.5h11.666a2.5 2.5 0 1 1 0 5H14.167a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Customizable Trading Strategies</h5>
+                                    <p class="mb-0">
+                                       Ability to implement and customize trading strategies based on technical indicators, market conditions, and user preferences.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M10.667 13.333a2.667 2.667 0 0 1 2.666-2.666h37.334a2.667 2.667 0 0 1 2.666 2.666v37.334a2.667 2.667 0 0 1-2.666 2.666H13.333a2.667 2.667 0 0 1-2.666-2.666V13.333Zm0 8h42.666m-32-10.666v10.666" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Risk Management</h5>
+                                    <p class="mb-0">
+                                       Tools for managing risk, including stop-loss orders, take-profit orders, and position sizing controls.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="150">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M10.667 21.333a10.667 10.667 0 0 1 10.666-10.666h21.334a10.667 10.667 0 0 1 10.666 10.666v21.334a10.667 10.667 0 0 1-10.666 10.666H21.333a10.667 10.667 0 0 1-10.666-10.666V21.333Z" />
+                                            <path d="M24 21.333a8 8 0 0 0 16 0" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Portfolio Tracking</h5>
+                                    <p class="mb-0">
+                                       Monitoring and tracking the performance of the overall portfolio, including profits and losses.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="200">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M24 32a8 8 0 1 0 16.001 0A8 8 0 0 0 24 32Z" />
+                                            <path
+                                                d="M10.667 32a21.334 21.334 0 1 0 42.667 0 21.334 21.334 0 0 0-42.667 0ZM32 5.333v5.334m0 42.666v5.334M53.333 32h5.334M5.333 32h5.334" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Notification System</h5>
+                                    <p class="mb-0">
+                                       Alerts and notifications for important market events, executed trades, or changes in account status.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="50">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M8 13.333a2.667 2.667 0 0 1 2.667-2.666h42.666A2.667 2.667 0 0 1 56 13.333V40a2.667 2.667 0 0 1-2.667 2.667H10.667A2.667 2.667 0 0 1 8 40V13.333Zm10.667 40h26.666M24 42.667v10.666m16-10.666v10.666M24 32v-3.2m8 3.2v-5.6m8 5.6V21.6" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Liquidity Analysis</h5>
+                                    <p class="mb-0">
+                                       Tools to assess liquidity on different trading pairs to ensure efficient execution of orders.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M8 18.667a5.333 5.333 0 0 1 5.333-5.334h37.334A5.334 5.334 0 0 1 56 18.667v26.666a5.333 5.333 0 0 1-5.333 5.334H13.333A5.333 5.333 0 0 1 8 45.333V18.667Z" />
+                                            <path
+                                                d="M18.667 40V29.333a5.334 5.334 0 0 1 10.666 0V40m-10.666-5.333h10.666m16-10.667v16h-4a4 4 0 1 1 4-4" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Communication Feature</h5>
+                                    <p class="mb-0">
+                                       Integration with social platforms for sharing strategies, insights, and learning from other traders.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="150">
+                            <div class="d-flex flex-column justify-between gap-6 text-center h-full hover-card-fe">
+                                <div
+                                    class="icon text-primary-dark w-14 h-14 rounded-3 flex-shrink-0 d-flex align-center justify-center mx-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
+                                        <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path
+                                                d="M34.667 13.333H56M34.667 24H48M34.667 40H56M34.667 50.667H48M8 13.333a2.667 2.667 0 0 1 2.667-2.666h10.666A2.667 2.667 0 0 1 24 13.333V24a2.667 2.667 0 0 1-2.667 2.667H10.667A2.667 2.667 0 0 1 8 24V13.333ZM8 40a2.667 2.667 0 0 1 2.667-2.667h10.666A2.667 2.667 0 0 1 24 40v10.667a2.667 2.667 0 0 1-2.667 2.666H10.667A2.667 2.667 0 0 1 8 50.667V40Z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="content flex-grow-1">
+                                    <h5 class="text-white mb-4">Automated Execution</h5>
+                                    <p class="mb-0">
+                                       Automated order placement and execution based on predefined trading strategies.
+                                    </p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a target="_blank"
+                                        href="Magic64.png.html#overview/introduction"
+                                        class="arrow-link arrow-link-primary-dark gap-3 fs-sm">
+                                        <span>Read More</span>
+                                        <svg class="icon" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
+                                                stroke="currentColor" stroke-width="1.21" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- 
+            <section id="tokenomics"
+                class="features-section has-blurry-shape position-relative overflow-hidden pt-10 pt-lg-15 pb-20 pb-lg-30 ">
+                <div class="blurry-shape">
+                    <img src="assets/images/shapes/blurry-shape-3.svg" alt="" class="img-fluid" />
+                </div>
+                <div class="container">
+                    <div class="text-center mb-18">
+                        <h1 class="text-white mb-0" data-aos="fade-up-sm" data-aos-delay="50">
+                            Tokenomics <br class="d-none d-lg-block" />
+
+                        </h1>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-lg-3 g-6 g-xl-14 align-center justify-center">
+                        <div class="col" data-aos="fade-up-sm" data-aos-delay="100">
+                            <div class="d-flex flex-column align-center justify-center flex-lg-row gap-6">
+                                <div
+                                    class="icon h-36 w-full flex-column flex-shrink-0 d-flex align-center justify-center rounded-3 p-4 border bg-gradient-3 text-primary-dark border-white border-opacity-10 hover-border hover-card-tn">
+                                    <h4 class="mb-0">90%</h4>
+                                    <h4 class="text-white mb-0 text-center">Liquidity</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos=" fade-up-sm" data-aos-delay="150">
+                            <div class="d-flex flex-column align-center justify-center flex-lg-row gap-6">
+                                <div
+                                    class="icon h-36  w-full flex-column flex-shrink-0 d-flex align-center justify-center rounded-3 p-4 border bg-gradient-3 text-primary-dark border-white border-opacity-10 hover-border hover-card-tn">
+                                    <h4 class="mb-0">5%</h4>
+                                    <h4 class="text-white mb-0 text-center">Team Development</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" data-aos=" fade-up-sm" data-aos-delay="150">
+                            <div class="d-flex flex-column align-center justify-center flex-lg-row gap-6">
+                                <div
+                                    class="icon h-36  w-full flex-column flex-shrink-0 d-flex align-center justify-center rounded-3 p-4 border bg-gradient-3 text-primary-dark border-white border-opacity-10 hover-border hover-card-tn">
+                                    <h4 class="mb-0">5%</h4>
+                                    <h4 class="text-white mb-0 text-center">CEX</h4>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </section> -->
+
+            <section id="security" class="bg-dark-blue-4 py-20 py-lg-30">
+                <div class="container">
+                    <div class="row justify-center mb-18">
+                        <div class="col-lg-9">
+                            <div class="text-center">
+                                <h1 class="text-white mb-0" data-aos="fade-up-sm" data-aos-delay="50">
+                                 Security Methods
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-10 g-xl-24 divider-x">
+                        <div class="col">
+                            <div class="h-full">
+                                <div class="icon w-16 h-16 flex-shrink-0 d-flex align-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="#2e2f45" stroke-width="1.5"
+                                            d="M8 13.333A5.333 5.333 0 0 1 13.333 8h37.334A5.333 5.333 0 0 1 56 13.333v37.334A5.333 5.333 0 0 1 50.667 56H13.333A5.333 5.333 0 0 1 8 50.667V13.333Z" />
+                                        <path stroke="#fff" stroke-width="2"
+                                            d="M24 40h-5.333m16-8h-16m10.666-8H18.667" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="text-white mb-4 scroll-text">Secure Key Management</h4>
+                                    <p class="mb-0 scroll-text">
+                                       SolTradingBot employs robust key management practices, ensuring the secure storage and handling of private keys. By utilizing industry-standard encryption protocols and secure key storage solutions, we prioritize the protection of user assets, minimizing the risk of unauthorized access.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="h-full">
+                                <div class="icon w-16 h-16 flex-shrink-0 d-flex align-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="#fff" stroke-width="2"
+                                            d="M24 37.334c0 4.418 7.163 8 16 8s16-3.582 16-8c0-4.42-7.163-8-16-8s-16 3.58-16 8Z" />
+                                        <path stroke="#fff" stroke-width="2"
+                                            d="M24 37.334V48c0 4.416 7.163 8 16 8s16-3.584 16-8V37.334" />
+                                        <path stroke="#2e2f45" stroke-width="1.5"
+                                            d="M8 16c0 2.859 3.05 5.499 8 6.928 4.95 1.43 11.05 1.43 16 0 4.95-1.43 8-4.07 8-6.928 0-2.859-3.05-5.499-8-6.928-4.95-1.43-11.05-1.43-16 0-4.95 1.43-8 4.07-8 6.928Z" />
+                                        <path stroke="#2e2f45" stroke-width="1.5"
+                                            d="M8 16v26.667c0 2.368 2.059 3.866 5.333 5.333" />
+                                        <path stroke="#2e2f45" stroke-width="1.5"
+                                            d="M8 29.334c0 2.367 2.059 3.866 5.333 5.333" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="text-white mb-4 scroll-text">Multi-Factor Authentication
+                                    </h4>
+                                    <p class="mb-0 scroll-text">
+                                       Enhancing the security of user accounts, SolTradingBot implements multi-factor authentication (MFA). This additional layer of verification, typically involving a combination of passwords and one-time codes, adds an extra barrier against unauthorized access, fortifying the overall security posture of the trading platform.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="h-full">
+                                <div class="icon w-16 h-16 flex-shrink-0 d-flex align-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="#2e2f45" stroke-width="1.5"
+                                            d="M32 8c19.2 0 24 4.8 24 24s-4.8 24-24 24S8 51.2 8 32 12.8 8 32 8Z" />
+                                        <path stroke="#fff" stroke-width="2"
+                                            d="M21.333 36a6.666 6.666 0 1 0 13.333 0 6.666 6.666 0 0 0-13.333 0Z" />
+                                        <path stroke="#fff" stroke-width="2" d="M21.333 21.334h21.334v21.333" />
+                                    </svg>
+                                </div>
+                                <div class="content">
+                                    <h4 class="text-white mb-4 scroll-text">Regular Security Audits and Updates</h4>
+                                    <p class="mb-0 scroll-text">
+                                       Security is an ongoing priority at SolTradingBot. Regular security audits are conducted to identify and address potential vulnerabilities promptly. We stay vigilant against emerging threats and vulnerabilities, implementing timely software updates and patches to ensure that our platform is fortified against evolving security challenges.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="roadmap" class="pt-20 pt-lg-30 pb-10 pb-lg-15">
+                <div class="container">
+                    <div class="row justify-center mb-18">
+                        <div class="col-lg-9">
+                            <div class="text-center">
+                                <h1 class="text-white" data-aos="fade-up-sm" data-aos-delay="50">
+                                 Roadmap for Future Developments
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-carousel-container position-relative">
+                        <div class="swiper review-carousel">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide h-auto">
+                                    <div
+                                        class="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10 hover-roadmap scroll-text-container">
+                                        <div class="d-flex items-center gap-4 mb-6">
+                                            <div class="scroll-text">
+                                                <h4 class="text-white mb-1">Phase 1</h4>
+                                                <p class="mb-0 fs-sm">Current Quarter</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-text">
+                                            <p class="review-text mb-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="currentColor" viewBox="0 0 15 14"
+                                                    class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Establish the core infrastructure for SolTradingBot, including exchange integrations with Jupiter, Orca, and Radium on the Solana network.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Conduct thorough testing of basic trading functionalities and security measures.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                <!-- <span class="text-primary-dark">Strategic Partnerships:
+                                                </span> -->
+                                                Launch SolTradingBot in a limited beta to gather user feedback and identify potential improvements.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Initiate community engagement and build a feedback loop with early adopters.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div
+                                        class="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10 hover-roadmap scroll-text-container">
+                                        <div class="d-flex items-center gap-4 mb-6">
+                                            <div class="scroll-text">
+                                                <h4 class="text-white mb-1">Phase 2</h4>
+                                                <p class="mb-0 fs-sm">Next Quarter
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-text">
+                                            <p class="review-text mb-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="currentColor" viewBox="0 0 15 14"
+                                                    class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Roll out additional features within the SolTradingBot ecosystem, including advanced analytics tools, risk management features, and portfolio tracking.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Implement user interface enhancements for a more intuitive and user-friendly experience.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Conduct a second round of beta testing to validate new features and gather user insights.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Continue building the SolTradingBot community through educational content and user support.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div
+                                        class="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10 hover-roadmap scroll-text-container">
+                                        <div class="d-flex items-center gap-4 mb-6">
+                                            <div class="scroll-text">
+                                                <h4 class="text-white mb-1">Phase 3</h4>
+                                                <p class="mb-0 fs-sm">Following Quarter
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-text">
+                                            <p class="review-text mb-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="currentColor" viewBox="0 0 15 14"
+                                                    class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Introduce the highly anticipated Sniper Monitor feature for precision trade execution.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Conduct thorough testing and simulations to ensure the accuracy and reliability of the Sniper Monitor.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Launch the Sniper Monitor in beta, collecting feedback from users to refine and optimize its performance.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Continue community outreach, hosting webinars and tutorials to educate users on leveraging the new feature.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div
+                                        class="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10 hover-roadmap scroll-text-container">
+                                        <div class="d-flex items-center gap-4 mb-6">
+                                            <div class="scroll-text">
+                                                <h4 class="text-white mb-1">Phase 4</h4>
+                                                <p class="mb-0 fs-sm">Subsequent Quarter
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-text">
+                                            <p class="review-text mb-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="currentColor" viewBox="0 0 15 14"
+                                                    class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Enhance SolTradingBot's scalability to handle increased trading volumes and user activity.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Explore additional partnerships with decentralized projects and exchanges on the Solana network.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Investigate the feasibility of supporting new assets or expanding to additional DEX platforms.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Implement community-driven features and improvements based on user feedback.
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Conduct regular security audits and updates to maintain a robust and secure trading environment.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div
+                                        class="review-card rounded h-full p-6 border bg-dark-blue-3 border-white border-opacity-10 hover-roadmap scroll-text-container">
+                                        <div class="d-flex items-center gap-4 mb-6">
+                                            <div class="scroll-text">
+                                                <h4 class="text-white mb-1">Phase 5</h4>
+                                                <p class="mb-0 fs-sm">Future Quarters
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-text">
+                                            <p class="review-text mb-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    fill="currentColor" viewBox="0 0 15 14"
+                                                    class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Focus on global outreach and user acquisition to establish SolTradingBot as a go-to solution for decentralized trading on Solana.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Explore regulatory compliance measures to ensure SolTradingBot aligns with evolving financial regulations.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Expand educational resources and support to cater to a diverse user base.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Continuously innovate and adapt to emerging trends in the decentralized finance space.
+
+                                            </p>
+                                            <p class="review-text mb-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 15 14" class="w-4 h-4 text-primary-dark">
+                                                    <path
+                                                        d="m4.824 4.225-4.253.617-.075.015A.667.667 0 0 0 .202 5.98l3.082 3-.727 4.236-.009.073a.667.667 0 0 0 .976.63l3.804-2 3.796 2 .066.03a.666.666 0 0 0 .902-.733l-.728-4.237 3.083-3 .052-.056a.667.667 0 0 0-.422-1.08l-4.253-.618L7.922.372a.667.667 0 0 0-1.196 0L4.824 4.225Z" />
+                                                </svg>
+                                                Foster partnerships and collaborations to contribute to the broader Solana ecosystem.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination justify-center mt-8"></div>
+                    </div>
+                </div>
+            </section>
+
+
+           
+
+
+            <section class="py-10 py-lg-15">
+                <div class="container">
+                    <div class="row justify-center mb-18">
+                        <div class="col-lg-9">
+                            <div class="text-center">
+                              
+                                <h1 class="text-white mb-0" data-aos="fade-up-sm" data-aos-delay="100">
+                                    Partners
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-center mt-18">
+                        <div class="col-lg-10">
+                            <div class="text-center">
+
+                                <div
+                                    class="row align-center justify-center row-cols-3 row-cols-md-5 g-6 g-lg-10 g-xl-20">
+                                    <div class="col" data-aos="fade-up-sm" data-aos-delay="100" data-aos-offset="10">
+                                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/partners/DEXSCREENER.webp" alt=""
+                                            class="img-fluid brand-img hover-scale-10" />
+                                    </div>
+                                    <div class="col" data-aos="fade-up-sm" data-aos-delay="150" data-aos-offset="10">
+                                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/partners/Jupiter.webp" alt=""
+                                            class="img-fluid brand-img hover-scale-10" />
+                                    </div>
+                                    <div class="col" data-aos="fade-up-sm" data-aos-delay="200" data-aos-offset="10">
+                                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/partners/Orca.webp" alt=""
+                                            class="img-fluid brand-img hover-scale-10" />
+                                    </div>
+                                    <a href="Magic64.png.html#" target="_blank" class="col" data-aos="fade-up-sm"
+                                        data-aos-delay="250" data-aos-offset="10">
+                                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/partners/Raydium.webp" alt=""
+                                            class="img-fluid brand-img hover-scale-10" />
+                                    </a>
+                                    <div class="col" data-aos="fade-up-sm" data-aos-delay="300" data-aos-offset="10">
+                                        <img src="https://soltradingbot.com/assets/images/icons/assets/images/partners/Solscan.webp" alt=""
+                                            class="img-fluid brand-img hover-scale-10" />
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer bg-color-blur pt-10 pt-lg-15">
+            <div class="container">
+                <div class="row g-10">
+                    <div class="col-lg-9 col-xl-8 order-lg-2">
+                        <div class="row g-6">
+                            <div class="col-md-6 col-lg-4">
+                                <div class=" footer-widget text-center text-md-start">
+                                    <h6 class="text-white mb-2">SOLTRADINGBOT</h6>
+                                    <ul class="link-list list-unstyled mb-0">
+                                        <li>
+                                            <a href="Magic64.png.html#home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="Magic64.png.html#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="Magic64.png.html#features">Features</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="#tokenomics">Tokenomics</a>
+                                        </li> -->
+                                        <li class="nav-item">
+                                            <a class="nav-link" target="_blank" href="https://dune.com/whale_hunter/sol-trading-bot">Dune</a>
+                                        </li>
+                                      
+                                        <li>
+                                            <a href="Magic64.png.html#roadmap">Roadmap</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <div class="footer-widget text-center text-md-start">
+                                    <h6 class="text-white mb-2">Start</h6>
+                                    <ul class="link-list list-unstyled mb-0">
+                                        <li>
+                                            <a href="https://dexscreener.com/solana/2x8o3hA5S5fBxCSE9hzVTf3RohcMWHqkDNKNEPuzprD5" target="_blank">Chart</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://t.me/SolTradingBot" target="_blank">Bot</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-widget text-center text-md-start d-flex justify-center">
+                                    <div class=" footer-widget text-center text-md-start">
+                                        <h6 class="text-white mb-4">Contact</h6>
+                                      
+                                        <ul
+                                            class="list-unstyled d-flex flex-wrap align-center justify-center justify-md-start gap-3 social-list mb-0 mt-5">
+                                            <li>
+                                                <a href="https://twitter.com/SolTradingBot" target="_blank">
+                                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
+                                                        viewBox="0 0 24 24" className="socialMediaIcon" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="https://t.me/SolTradingBot_Portal" target="_blank">
+                                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
+                                                        viewBox="0 0 448 512" className="socialMediaIcon" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/@SolTradingBot" target="_blank">
+                                                    <svg stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" className="socialMediaIcon" height="1em"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="Magic64.png.html#" target="_blank">
+                                                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
+                                                        viewBox="0 0 640 512" className="socialMediaIcon" height="1em"
+                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 order-lg-1 me-auto">
+                        <div class="footer-widget text-center text-lg-start">
+                            <a href="Magic64.png.html">
+                                <img src="https://soltradingbot.com/assets/images/icons/assets/images/icons/Magic200.png" alt="" class="img-fluid" width="64" />
+                            </a>
+                            <p class="fs-sm mb-0 mt-4">
+                              Explore our feature-rich ecosystem and stay tuned for the upcoming Sniper Monitor, promising unmatched precision in every trade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center py-6 mt-8">
+                    <p class="fs-sm mb-0">
+                        <span><a href="../../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2440415241484b54415664574b48505645404d4a43464b500a474b49">[email&#160;protected]</a></span>
+                        <br/>
+                        © 2023 <span class="text-primary-dark">SOLTRADINGBOT</span>.
+                        | All rights reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://soltradingbot.com/assets/images/icons/assets/js/plugins.js"></script>
+    <script src="https://soltradingbot.com/assets/images/icons/assets/js/main.js"></script>
+    <script src="https://soltradingbot.com/assets/images/icons/assets/js/scripts.js"></script>
+    <script>
+        function copyContract() {
+            var copyText = "2x8o3hA5S5fBxCSE9hzVTf3RohcMWHqkDNKNEPuzprD5"
+            // var copyText = document.getElementById("myInput");
+            // copyText.select();
+            // copyText.setSelectionRange(0, 99999);
+
+            // const inicio = copyText.slice(0, 4);
+            // const fim = copyText.slice(-4);
+            navigator.clipboard.writeText(copyText);
+            alert("Contract copied: 2x8o3hA5S5fBxCSE9hzVTf3RohcMWHqkDNKNEPuzprD5")
+            // var tooltip = document.getElementById("myTooltip");
+            // tooltip.innerHTML = "Copied: " + `${inicio}...${fim}`;
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copy Contract";
+        }
+    </script>
+</body>
+
+</html>
