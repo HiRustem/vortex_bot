@@ -56,8 +56,8 @@
         data-bs-theme="dark"
       >
         <div class="container">
-          <a class="navbar-brand" href="index.html#">
-            <div class="d-flex align-center justify-center logo">
+          <a href="index.html#">
+            <div class="navbar-brand">
               <img src="../assets/images/logo.png" alt="" width="64" />
               <h4 class="navbar-brand__heading mb-0 bold">VortexBot</h4>
             </div>
@@ -123,8 +123,22 @@
                     style="word-break: break-word"
                   >
                     Start trading with AbroxBot signal bot and make profits from
-                    $1240/week!
+                    <span
+                      class="accent_text"
+                      data-aos="fade-up-sm"
+                      data-aos-delay="300"
+                      >$1240/week!</span
+                    >
                   </p>
+
+                  <a
+                    href="https://t.me/SolTradingBot"
+                    target="_blank"
+                    class="btn btn-sm bot_link bot_link-desktop"
+                    data-aos="fade-up-sm"
+                    data-aos-delay="250"
+                    >ACTIVATE BOT</a
+                  >
                   <!-- <form action="#" class="pe-xl-10" data-aos="fade-up-sm" data-aos-delay="150">
                   <div class="input-group with-icon">
                       <input type="email" class="form-control" placeholder="Enter Your Email" />
@@ -183,7 +197,7 @@
                     "
                   >
                     <img
-                      src="../assets/video/SolTradingBot.png"
+                      src="../assets/images/illustrations/main.png"
                       class="custom-banner"
                     />
                   </div>
@@ -197,7 +211,7 @@
             <a
               href="https://t.me/SolTradingBot"
               target="_blank"
-              class="btn btn-sm bot_link"
+              class="btn btn-sm bot_link bot_link-tablet"
               data-aos="fade-up-sm"
               data-aos-delay="250"
               >ACTIVATE BOT</a
@@ -378,13 +392,17 @@
         <section id="about">
           <div class="container">
             <div
-              class="d-flex col align-center text-center p-md-12 px-xl-20 py-xl-12 mb-18"
+              class="d-flex col align-center text-center p-md-10 px-xl-20 py-xl-10 mb-18"
             >
-              <div class="row g-6 g-lg-14 g-xl-20 align-center">
-                <div class="col-lg-6" data-aos="fade-up-sm" data-aos-delay="50">
+              <div class="col g-6 g-lg-14 g-xl-20 align-center">
+                <div
+                  class="about_container"
+                  data-aos="fade-up-sm"
+                  data-aos-delay="50"
+                >
                   <div class="content">
                     <!-- <p class="text-primary-dark">About Us 1</p> -->
-                    <h1 class="text-white mb-8">How it works ?</h1>
+                    <h2 class="works__title mb-8">How it works ?</h2>
                     <p class="mb-6">
                       At VortexBot,
                       <strong class="about__description"
@@ -432,19 +450,20 @@
                         </svg>
                         <span></span>
                     </li>
-                </ul> -->
+                  </ul> -->
                   </div>
                 </div>
+
                 <div
-                  class="col-lg-6"
+                  class="about_video-block"
                   data-aos="fade-up-sm"
                   data-aos-delay="200"
                 >
-                  <div class="feature-img">
+                  <div class="about_video-container feature-img">
                     <video
                       controls=""
                       poster="/images/en.jpg"
-                      class="img-fluid"
+                      class="about_video img-fluid"
                     >
                       <source src="/images/en.mp4" type="video/mp4" />
                     </video>
@@ -734,16 +753,18 @@
               class="img-fluid"
             />
           </div>
-          <div class="container mb-12">
-            <div class="text-center mb-8 d-flex align-center justify-center">
-              <h1
+          <div class="container statistics_wrapper">
+            <div
+              class="text-center d-flex align-center justify-center statistics__header-container"
+            >
+              <h4
                 class="text-white mb-0 statistics__header"
                 data-aos="fade-up-sm"
                 data-aos-delay="50"
               >
                 <span class="statistics__header-dot">LIVE</span> trading
                 statistics of traders with VortexBot
-              </h1>
+              </h4>
             </div>
 
             <ul

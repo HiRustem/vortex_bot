@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
+  --swiper-navigation-size: 60px;
+
   --gen-blue: #0d6efd;
   --gen-indigo: #6610f2;
   --gen-purple: #6f42c1;
@@ -4142,7 +4144,7 @@ Copy button
 
 .swiper-button-next,
 .swiper-button-prev {
-  font-weight: 600;
+  font-weight: 900;
   transform: translate(0, -50%);
 }
 
@@ -4266,6 +4268,18 @@ Copy button
   background-color: var(--gen-white);
 }
 
+@media (max-width: 768px) {
+  .bot_link-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .bot_link-tablet {
+    display: none;
+  }
+}
+
 .works {
   display: flex;
   align-items: center;
@@ -4275,6 +4289,12 @@ Copy button
   margin-block: 2rem;
 }
 
+@media (max-width: 768px) {
+  .works {
+    padding-inline: 1rem;
+  }
+}
+
 .works__title {
   font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
   text-align: center;
@@ -4282,8 +4302,8 @@ Copy button
 }
 
 .works-instruction {
-  font-size: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
   text-align: center;
+  font-weight: 600;
   color: var(--gen-white);
 }
 
@@ -4453,8 +4473,13 @@ Copy button
 .works-swiper__card {
   width: 500px;
   height: 500px;
+  border: 0.2rem solid var(--special_green);
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.works-swiper__card:hover {
+  box-shadow: 0 0 18px 4px rgb(125 226 96 / 30%);
 }
 
 .stories-swiper__card {
@@ -4492,6 +4517,10 @@ Copy button
   }
 }
 
+.about_video {
+  width: 100%;
+}
+
 .advantages__list {
   align-items: center;
   display: flex;
@@ -4503,18 +4532,36 @@ Copy button
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .advantages__list {
+    gap: 1rem;
+  }
+}
+
 .advantages__list-item {
-  background-color: #343a4060;
+  background-color: #292b2a;
   block-size: 200px;
   border: 0.2rem solid var(--special_green);
-  border-radius: 1rem;
+  border-radius: 2rem;
   flex-basis: 354px;
   flex-shrink: 1;
   padding: 2rem;
 }
 
+.advantages__card-description {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .advantages__list-item {
+    padding: 1rem;
+    flex-basis: 300px;
+    block-size: 170px;
+  }
+}
+
 .advantages__list-item:hover {
-  box-shadow: 0 0 18px 4px var(--special_green);
+  box-shadow: 0 0 18px 4px rgb(125 226 96 / 30%);
 }
 
 .advantages__card-value {
@@ -4547,6 +4594,26 @@ Copy button
   padding-block: 2rem;
 }
 
+.statistics_wrapper {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .statistics_wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+.statistics__header-container {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .statistics__header-container {
+    margin-bottom: 1rem;
+  }
+}
+
 .statistics__header {
   margin-top: 1rem;
 }
@@ -4557,13 +4624,13 @@ Copy button
 
 .statistics__header-dot::before {
   position: absolute;
-  top: -10px;
-  left: -20px;
+  top: 3px;
+  left: -30px;
 
   display: flex;
   content: "";
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
 
   border-radius: 50%;
   background-color: var(--gen-red);
@@ -4594,14 +4661,38 @@ Copy button
   gap: 5px;
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .document_link {
-  color: var(--gen-white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    76.09deg,
+    var(--special_green) 66.39%,
+    var(--gen-green) 88.07%
+  );
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 768px) {
+  .document_link {
+    font-size: smaller;
+  }
 }
 
 .document_link:hover,
 .document_link:active {
+  background-image: radial-gradient(
+    circle,
+    var(--gen-white) 55.07%,
+    var(--special_green) 88.39%
+  );
+}
+
+.accent_text {
+  font-weight: 600;
+  font-size: larger;
   color: var(--special_green);
 }
