@@ -4111,10 +4111,16 @@ Copy button
 }
 
 .custom-banner {
-  width: 500px;
+  width: 700px;
 }
 
 @media screen and (max-width: 768px) {
+  .custom-banner {
+    width: 550px;
+  }
+}
+
+@media (max-width: 425px) {
   .custom-banner {
     width: 350px;
   }
@@ -4564,6 +4570,38 @@ Copy button
   box-shadow: 0 0 18px 4px rgb(125 226 96 / 30%);
 }
 
+.advantages__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  height: 100%;
+}
+
+.advantages__image-wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+
+  color: var(--special_green);
+}
+
+.advantages__image-wrapper img {
+  margin-bottom: 0.5rem;
+  color: var(--special_green);
+}
+
+.advantages__image-wrapper svg {
+  width: 100%;
+  height: 100%;
+
+  color: var(--special_green);
+}
+
 .advantages__card-value {
   -webkit-background-clip: text;
   background-clip: text;
@@ -4590,17 +4628,28 @@ Copy button
   margin-block-start: 2.5rem;
   text-align: center;
 }
+
 .statistics {
   padding-block: 2rem;
 }
 
 .statistics_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
   .statistics_wrapper {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .statistics__header-container {
+    max-width: 280px;
   }
 }
 

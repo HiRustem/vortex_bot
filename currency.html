@@ -6,148 +6,95 @@
     <link rel="stylesheet" href="../assets/css/currency_style.css" />
   </head>
   <body class="page">
-    <div class="container setting">
-      <nav class="navbar">
-        <a class="navbar-link" href="index.html#">
-          <div class="navbar-brand">
-            <img src="../assets/images/logo.png" alt="" width="64" />
-            <h4 class="navbar-brand__heading">VortexBot</h4>
-          </div>
-        </a>
-      </nav>
-
-      <h1 class="settings-header" style="margin-bottom: 20px">VortexBot</h1>
+    <div class="container settings">
+      <div class="logo_container">
+        <div class="logo_image-container">
+          <a class="logo_link" href="index.html#">
+            <img class="logo_image" src="../assets/images/logo.png" alt="" />
+          </a>
+        </div>
+      </div>
 
       <div class="settings-section">
-        <h2>Settings</h2>
-        <h4 class="settings-description">Choose currency and timeframe</h4>
-
-        <label for="currencyDropdown">
-          Select currency
-          <select
-            id="currencyDropdown"
-            name="currencyDropdown"
-            class="dropdown"
-          >
-            <option value="USD/JPY" class="currency_item">USD/JPY</option>
-            <option value="USD/CHF" class="currency_item">USD/CHF</option>
-            <option value="USD/CAD" class="currency_item">USD/CAD</option>
-            <option value="GBP/USD" class="currency_item">GBP/USD</option>
-            <option value="EUR/USD" class="currency_item">EUR/USD</option>
-            <option value="AUD/USD" class="currency_item">AUD/USD</option>
-            <option value="BTC/USD" class="currency_item">BTC/USD</option>
-            <option value="ETH/USD" class="currency_item">ETH/USD</option>
-            <option value="SOL/USD" class="currency_item">SOL/USD</option>
-            <option value="TON/USD" class="currency_item">TON/USD</option>
-            <option value="DOGE/USD" class="currency_item">DOGE/USD</option>
-            <option value="TRX/USD" class="currency_item">TRX/USD</option>
-          </select>
-        </label>
-
-        <label for="timeframeDropdown">
-          Select timeframe
-          <select
-            name="timeframeDropdown"
-            id="timeframeDropdown"
-            class="dropdown"
-          >
-            <option value="30 sec" class="timeframe_item">30 sec</option>
-            <option value="1 min" class="timeframe_item">1 min</option>
-            <option value="2 min" class="timeframe_item">2 min</option>
-            <option value="5 min" class="timeframe_item">5 min</option>
-            <option value="10 min" class="timeframe_item">10 min</option>
-            <option value="15 min" class="timeframe_item">15 min</option>
-          </select>
-        </label>
-
-        <!-- <div
-          class="dropdown"
-          style="margin-top: 15px; margin-left: auto; margin-right: 10px"
-        >
-          <a
-            class="dropdown-toggle"
-            href="#"
-            role="button"
-            id="currency"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            style="color: white"
-          >
-            {{ __('site.46') }}
-          </a>
-          <div
-            class="dropdown-menu dropdown-menu-right"
-            aria-labelledby="currency"
-            style=""
-          >
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">USD/JPY</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">USD/CHF</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">USD/CAD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">GBP/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">EUR/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">AUD/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">BTC/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">ETH/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">SOL/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">TON/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">DOGE/USD</a>
-            </li>
-            <li>
-              <a class="dropdown-item dropdown-item1" href="#">TRX/USD</a>
-            </li>
+        <div class="settings-section_wrapper">
+          <div class="custom-select currency-select">
+            <div class="select-trigger currency-trigger">
+              <span class="select-trigger_content">Select currency</span
+              ><img
+                class="select-icon"
+                src="/assets/images/svg/chevron-down.svg"
+                alt="chevron down"
+              />
+            </div>
+            <ul class="options">
+              <li class="option currency-option" data-value="USD/JPY">
+                USD/JPY
+              </li>
+              <li class="option currency-option" data-value="USD/CHF">
+                USD/CHF
+              </li>
+              <li class="option currency-option" data-value="USD/CAD">
+                USD/CAD
+              </li>
+              <li class="option currency-option" data-value="GBP/USD">
+                GBP/USD
+              </li>
+              <li class="option currency-option" data-value="EUR/USD">
+                EUR/USD
+              </li>
+              <li class="option currency-option" data-value="AUD/USD">
+                AUD/USD
+              </li>
+              <li class="option currency-option" data-value="BTC/USD">
+                BTC/USD
+              </li>
+              <li class="option currency-option" data-value="ETH/USD">
+                ETH/USD
+              </li>
+              <li class="option currency-option" data-value="SOL/USD">
+                SOL/USD
+              </li>
+              <li class="option currency-option" data-value="TON/USD">
+                TON/USD
+              </li>
+              <li class="option currency-option" data-value="DOGE/USD">
+                DOGE/USD
+              </li>
+              <li class="option currency-option" data-value="TRX/USD">
+                TRX/USD
+              </li>
+            </ul>
           </div>
-        </div> -->
 
-        <!-- <div class="dropdown" style="margin-left: auto; margin-right: 10px">
-          <a
-            class="dropdown-toggle"
-            href="#"
-            role="button"
-            id="timeframe"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            style="color: white"
-          >
-            Timeframe
-          </a>
-          <div
-            class="dropdown-menu dropdown-menu-right"
-            aria-labelledby="timeframe"
-            style=""
-          >
-            <li><a class="dropdown-item dropdown-item1" href="#">30 sec</a></li>
-            <li><a class="dropdown-item dropdown-item1" href="#">1 min</a></li>
-            <li><a class="dropdown-item dropdown-item1" href="#">2 min</a></li>
-            <li><a class="dropdown-item dropdown-item1" href="#">5 min</a></li>
-            <li><a class="dropdown-item dropdown-item1" href="#">10 min</a></li>
-            <li><a class="dropdown-item dropdown-item1" href="#">15 min</a></li>
+          <div class="custom-select timeframe-select">
+            <div class="select-trigger timeframe-trigger">
+              <span class="select-trigger_content">Select timeframe</span>
+              <img
+                class="select-icon"
+                src="/assets/images/svg/chevron-down.svg"
+                alt="chevron down"
+              />
+            </div>
+            <ul class="options">
+              <li class="option timeframe-option" data-value="30 sec">
+                30 sec
+              </li>
+              <li class="option timeframe-option" data-value="1 min">1 min</li>
+              <li class="option timeframe-option" data-value="2 min">2 min</li>
+              <li class="option timeframe-option" data-value="5 min">5 min</li>
+              <li class="option timeframe-option" data-value="10 min">
+                10 min
+              </li>
+              <li class="option timeframe-option" data-value="15 min">
+                15 min
+              </li>
+            </ul>
           </div>
-        </div> -->
+        </div>
 
-        <p style="margin-top: 20px; text-align: start"></p>
+        <button class="button start-button" id="start" disabled>
+          Start signal
+        </button>
       </div>
 
       <div class="chart-container">
@@ -156,29 +103,34 @@
           style="width: 0%; max-height: 700px; height: 0%; display: none"
         >
         </iframe>
-        <button class="button" id="start" disabled>Start signal</button>
 
-        <div id="scale-container" class="hidden">
-          <div
-            class="scale"
-            id="scale-green"
-            style="
-              height: 100%;
-              background-color: #28a745;
-              width: 50%;
-              font-size: 30px;
-            "
-          ></div>
-          <div
-            class="scale"
-            id="scale-red"
-            style="
-              height: 100%;
-              background-color: red;
-              width: 50%;
-              font-size: 30px;
-            "
-          ></div>
+        <div id="scale-container" class="scale-container hidden">
+          <div class="circular-indicator">
+            <div class="circle">
+              <div class="inner-circle"></div>
+              <span class="percentage">+35%</span>
+            </div>
+          </div>
+          <!-- <div id="scale-indicator__container">
+            <img
+              class="scale-triangle green-traingle"
+              src="/assets/images/svg/triangle-rounded.svg"
+              alt="triangle"
+            />
+
+            <div class="scale-triangle__content"></div>
+
+            <div class="scale" id="scale-green"></div>
+          </div>
+          <div class="scale" id="scale-green"></div>
+          <div id="scale-indicator__container">
+            <img
+              class="scale-triangle red-triangle"
+              src="/assets/images/svg/triangle-rounded.svg"
+              alt="triangle"
+            />
+            <div class="scale" id="scale-red"></div>
+          </div> -->
         </div>
 
         <div class="percent">
@@ -188,192 +140,321 @@
       </div>
 
       <script>
-        // document.addEventListener('DOMContentLoaded', () => {
-        //     // Проверяем значение currencyPage в LocalStorage
-        //     const currencyPage = localStorage.getItem('currencyPage');
-        //
-        //     if (currencyPage !== 'true') {
-        //         // Если значение не равно true, перенаправляем на главную страницу
-        //         window.location.href = '/';
-        //     }
-        //     // Если значение равно true, остаемся на текущей странице
-        // });
+        const circularIndicator = document.querySelector(".circular-indicator");
+        const circle = document.querySelector(".circle");
+        const percentageText = document.querySelector(".percentage");
+        let currentProgress = 0;
 
-        let currencySelected = false;
-        let timeframeSelected = false;
-        let up = 50; // Начальное значение
-        let down = 50; // Начальное значение
-        let timeoutUp, timeoutDown;
+        function updateCircularIndicator(value) {
+          const percentage = Math.max(-100, Math.min(100, value));
 
-        const currencyDropdown = document.querySelector("#currencyDropdown");
-        const timeframeDropdown = document.querySelector("#timeframeDropdown");
-        const startButton = document.querySelector("#start");
-        const scaleContainer = document.querySelector("#scale-container");
+          const step = 1;
+          const duration = 500;
+          const frameRate = 60;
 
-        const percentUp = document.querySelector(".percent .up");
-        const percentDown = document.querySelector(".percent .down");
+          const totalFrames = Math.round((duration / 1000) * frameRate);
+          const progressIncrement =
+            (percentage - currentProgress) / totalFrames;
 
-        let timerId;
+          let frame = 0;
 
-        let currencyDropdownValue = "";
-        let timeframeDropdownValue = "";
-        let isStartDisabled = true;
+          function animate() {
+            if (frame < totalFrames) {
+              currentProgress += progressIncrement;
+              frame++;
 
-        currencyDropdown.value = "";
-        timeframeDropdown.value = "";
+              // Обновляем градиент
+              if (currentProgress >= 0) {
+                circle.style.setProperty("--progress", currentProgress * 3.6);
+                circle.style.background = `conic-gradient(
+                  #00c853 0deg,
+                  #b2ff59 ${currentProgress * 3.6}deg,
+                  #f44336 ${currentProgress * 3.6}deg,
+                  #ff5252 360deg
+                )`;
+              } else {
+                circle.style.setProperty(
+                  "--progress",
+                  Math.abs(currentProgress) * 3.6
+                );
+                circle.style.background = `conic-gradient(
+                  #ff5252 0deg,
+                  #f44336 ${Math.abs(currentProgress) * 3.6}deg,
+                  #b2ff59 ${Math.abs(currentProgress) * 3.6}deg,
+                  #00c853 360deg
+                )`;
+              }
 
-        function checkStartDisabled() {
-          if (!!timeframeDropdownValue && !!currencyDropdownValue) {
-            isStartDisabled = false;
-            startButton.disabled = isStartDisabled;
+              percentageText.textContent =
+                (currentProgress > 0 ? "+" : "") +
+                Math.round(currentProgress) +
+                "%";
+
+              requestAnimationFrame(animate);
+
+              if (value >= 60) {
+                circle.style.animation = "pulse-green 2s infinite linear";
+              }
+
+              if (100 - value >= 60) {
+                circle.style.animation = "pulse-red 2s infinite linear";
+              }
+
+              if (value < 60) {
+                circle.style.animation = "";
+              }
+            }
           }
 
-          if (!timeframeDropdownValue || !currencyDropdownValue) {
-            isStartDisabled = true;
-            startButton.disabled = isStartDisabled;
+          requestAnimationFrame(animate);
+        }
 
+        document.addEventListener("DOMContentLoaded", () => {
+          let currencySelected = false;
+          let timeframeSelected = false;
+          let up = 50; // Начальное значение
+          let down = 50; // Начальное значение
+          let timeoutUp, timeoutDown;
+
+          let timerId;
+
+          let currencyDropdownValue = "";
+          let timeframeDropdownValue = "";
+          let isStartDisabled = true;
+
+          const startButton = document.querySelector("#start");
+          const scaleContainer = document.querySelector("#scale-container");
+
+          const percentUp = document.querySelector(".percent .up");
+          const percentDown = document.querySelector(".percent .down");
+
+          function checkStartDisabled() {
+            if (!!timeframeDropdownValue && !!currencyDropdownValue) {
+              isStartDisabled = false;
+              startButton.disabled = isStartDisabled;
+            }
+
+            if (!timeframeDropdownValue || !currencyDropdownValue) {
+              isStartDisabled = true;
+              startButton.disabled = isStartDisabled;
+
+              if (startButton.classList.contains("hidden")) {
+                startButton.classList.remove("show");
+                startButton.classList.add("hidden");
+              }
+            }
+          }
+
+          function checkIntervalStarted() {
             if (startButton.classList.contains("hidden")) {
-              startButton.classList.remove("show");
-              startButton.classList.add("hidden");
+              clearInterval(timerId);
+              startButton.classList.remove("hidden");
+
+              scaleContainer.classList.remove("flex");
+              scaleContainer.classList.add("hidden");
+
+              percentUp.innerHTML = "";
+              percentDown.innerHTML = "";
             }
           }
-        }
 
-        function checkIntervalStarted() {
-          if (startButton.classList.contains("hidden")) {
-            clearInterval(timerId);
-            startButton.classList.remove("hidden");
+          //currency dropdown
+          const customCurrencySelect = document.querySelector(
+            ".custom-select.currency-select"
+          );
 
-            scaleContainer.classList.remove("flex");
-            scaleContainer.classList.add("hidden");
+          const currencyTrigger = customCurrencySelect.querySelector(
+            ".select-trigger.currency-trigger"
+          );
+          const currencyOptions = customCurrencySelect.querySelectorAll(
+            ".option.currency-option"
+          );
 
-            percentUp.innerHTML = "";
-            percentDown.innerHTML = "";
-          }
-        }
+          const currencyTriggerContent = currencyTrigger.querySelector(
+            ".select-trigger_content"
+          );
 
-        currencyDropdown.addEventListener("change", (event) => {
-          currencyDropdownValue = event.target.value;
-
-          checkIntervalStarted();
-          checkStartDisabled();
-        });
-
-        timeframeDropdown.addEventListener("change", (event) => {
-          timeframeDropdownValue = event.target.value;
-
-          checkIntervalStarted();
-          checkStartDisabled();
-        });
-
-        document.querySelectorAll(".dropdown-item1").forEach(function (item) {
-          item.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            var parentDropdown = this.closest(".dropdown");
-            var dropdownToggle =
-              parentDropdown.querySelector(".dropdown-toggle");
-
-            dropdownToggle.textContent = this.textContent; // Обновляем текст dropdown-toggle
-            dropdownToggle.setAttribute("aria-expanded", "false"); // Закрываем dropdown
-            parentDropdown
-              .querySelector(".dropdown-menu")
-              .classList.remove("show"); // Убираем класс 'show'
-
-            // Проверяем, какой dropdown был изменен, и обновляем статус
-            if (parentDropdown.contains(document.getElementById("currency"))) {
-              currencySelected = true;
-            } else if (
-              parentDropdown.contains(document.getElementById("timeframe"))
-            ) {
-              timeframeSelected = true;
-            }
-
-            // Включаем кнопку "старт", если все параметры выбраны
-            // if (currencySelected && timeframeSelected) {
-            //   document.getElementById("start").disabled = false;
-            // } else {
-            //   document.getElementById("start").disabled = true;
-            // }
-
-            // Сброс и скрытие контейнера при изменении выбора
-            document.getElementById("scale-container").style.display = "none";
-            // document.getElementById("start").disabled = false;
-
-            // Сбрасываем значения up и down до 50 и перезапускаем обновление
+          currencyTrigger.addEventListener("click", () => {
+            customCurrencySelect.classList.toggle("open");
           });
+
+          currencyOptions.forEach((option) => {
+            option.addEventListener("click", () => {
+              customCurrencySelect
+                .querySelector(".option.selected")
+                ?.classList.remove("selected");
+
+              option.classList.add("selected");
+
+              currencyTriggerContent.textContent = option.textContent;
+
+              customCurrencySelect.classList.remove("open");
+
+              currencyDropdownValue = option.textContent;
+
+              checkIntervalStarted();
+              checkStartDisabled();
+            });
+          });
+
+          document.addEventListener("click", (e) => {
+            if (!customCurrencySelect.contains(e.target)) {
+              customCurrencySelect.classList.remove("open");
+            }
+          });
+
+          //timeframe dropdown
+          const customTimeframeSelect = document.querySelector(
+            ".custom-select.timeframe-select"
+          );
+          const timeframeTrigger = customTimeframeSelect.querySelector(
+            ".select-trigger.timeframe-trigger"
+          );
+          const timeframeOptions = customTimeframeSelect.querySelectorAll(
+            ".option.timeframe-option"
+          );
+
+          const timeframeTriggerContent = timeframeTrigger.querySelector(
+            ".select-trigger_content"
+          );
+
+          timeframeTrigger.addEventListener("click", () => {
+            customTimeframeSelect.classList.toggle("open");
+          });
+
+          timeframeOptions.forEach((option) => {
+            option.addEventListener("click", () => {
+              customTimeframeSelect
+                .querySelector(".option.selected")
+                ?.classList.remove("selected");
+
+              option.classList.add("selected");
+
+              timeframeTriggerContent.textContent = option.textContent;
+
+              customTimeframeSelect.classList.remove("open");
+
+              timeframeDropdownValue = option.textContent;
+
+              checkIntervalStarted();
+              checkStartDisabled();
+            });
+          });
+
+          document.addEventListener("click", (e) => {
+            if (!customTimeframeSelect.contains(e.target)) {
+              customTimeframeSelect.classList.remove("open");
+            }
+          });
+
+          //update
+
+          document
+            .getElementById("start")
+            .addEventListener("click", function () {
+              if (!currencyDropdownValue || !timeframeDropdownValue) {
+                alert(
+                  "Please select both a currency and a timeframe before starting."
+                );
+                return;
+              }
+
+              startButton.classList.add("hidden");
+
+              up = 50;
+              down = 50;
+              // updatePercentages(); // Немедленное обнов
+
+              updateCircularIndicator(up);
+
+              if (timerId) clearInterval(timerId);
+
+              timerId = setInterval(updatePercentages, 1800);
+
+              scaleContainer.classList.remove("hidden");
+              scaleContainer.classList.add("flex");
+            });
+
+          function updatePercentages() {
+            let change = Math.random() * 3; // Случайное изменение от 2% до 10%
+            change *= Math.random() < 0.5 ? -1 : 1; // Определение, увеличивать ли или уменьшать
+
+            // Предварительное изменение up и down
+            let newUp = up + change;
+            let newDown = down - change;
+
+            // Проверка и корректировка значений up и down
+            if (newUp > 91.5) {
+              newUp = 91.5;
+              newDown = 100 - newUp; // Корректируем down, чтобы сумма была 100%
+            } else if (newDown > 91.5) {
+              newDown = 91.5;
+              newUp = 100 - newDown; // Корректируем up, чтобы сумма была 100%
+            } else if (newUp < 8.5) {
+              newUp = 8.5;
+              newDown = 100 - newUp; // Корректируем down, чтобы сумма была 100%
+            } else if (newDown < 8.5) {
+              newDown = 8.5;
+              newUp = 100 - newDown; // Корректируем up, чтобы сумма была 100%
+            }
+
+            // Устанавливаем новые значения
+            up = newUp;
+            down = newDown;
+
+            updateCircularIndicator(newUp.toFixed(0));
+
+            // let upHTML = `${up.toFixed(1)}%`;
+            // let downHTML = `${down.toFixed(1)}%`;
+            // const scaleGreen = document.getElementById("scale-green");
+            // const scaleRed = document.getElementById("scale-red");
+            // scaleGreen.style.height = `${up.toFixed(1)}%`;
+            // scaleRed.style.height = `${down.toFixed(1)}%`;
+
+            // // Update the UI elements with new values
+            // scaleGreen.textContent = upHTML;
+            // scaleRed.textContent = downHTML;
+
+            // let upHTML2 = up >= 70 ? `OPEN ORDER HIGHER ` : ``;
+            // let downHTML2 = down >= 70 ? `OPEN ORDER LOWER ` : ``;
+
+            // percentUp.innerHTML = upHTML2;
+            // percentDown.innerHTML = downHTML2;
+          }
         });
 
-        document.getElementById("start").addEventListener("click", function () {
-          if (!currencyDropdownValue || !timeframeDropdownValue) {
-            alert(
-              "Please select both a currency and a timeframe before starting."
-            );
-            return;
-          }
+        // document.querySelectorAll(".dropdown-item1").forEach(function (item) {
+        //   item.addEventListener("click", function (e) {
+        //     e.preventDefault();
 
-          startButton.classList.add("hidden");
+        //     var parentDropdown = this.closest(".dropdown");
+        //     var dropdownToggle =
+        //       parentDropdown.querySelector(".dropdown-toggle");
 
-          up = 50;
-          down = 50;
-          updatePercentages(); // Немедленное обнов
+        //     dropdownToggle.textContent = this.textContent;
+        //     dropdownToggle.setAttribute("aria-expanded", "false");
+        //     parentDropdown
+        //       .querySelector(".dropdown-menu")
+        //       .classList.remove("show");
 
-          if (timerId) clearInterval(timerId);
+        //     if (parentDropdown.contains(document.getElementById("currency"))) {
+        //       currencySelected = true;
+        //     } else if (
+        //       parentDropdown.contains(document.getElementById("timeframe"))
+        //     ) {
+        //       timeframeSelected = true;
+        //     }
 
-          timerId = setInterval(updatePercentages, 1800);
+        //     if (currencySelected && timeframeSelected) {
+        //       document.getElementById("start").disabled = false;
+        //     } else {
+        //       document.getElementById("start").disabled = true;
+        //     }
 
-          scaleContainer.classList.remove("hidden");
-          scaleContainer.classList.add("flex");
-        });
-
-        function updatePercentages() {
-          let change = Math.random() * 3; // Случайное изменение от 2% до 10%
-          change *= Math.random() < 0.5 ? -1 : 1; // Определение, увеличивать ли или уменьшать
-
-          // Предварительное изменение up и down
-          let newUp = up + change;
-          let newDown = down - change;
-
-          // Проверка и корректировка значений up и down
-          if (newUp > 91.5) {
-            newUp = 91.5;
-            newDown = 100 - newUp; // Корректируем down, чтобы сумма была 100%
-          } else if (newDown > 91.5) {
-            newDown = 91.5;
-            newUp = 100 - newDown; // Корректируем up, чтобы сумма была 100%
-          } else if (newUp < 8.5) {
-            newUp = 8.5;
-            newDown = 100 - newUp; // Корректируем down, чтобы сумма была 100%
-          } else if (newDown < 8.5) {
-            newDown = 8.5;
-            newUp = 100 - newDown; // Корректируем up, чтобы сумма была 100%
-          }
-
-          // Устанавливаем новые значения
-          up = newUp;
-          down = newDown;
-
-          let upHTML = `${up.toFixed(1)}%`;
-          let downHTML = `${down.toFixed(1)}%`;
-          const scaleGreen = document.getElementById("scale-green");
-          const scaleRed = document.getElementById("scale-red");
-          scaleGreen.style.width = `${up.toFixed(1)}%`;
-          scaleRed.style.width = `${down.toFixed(1)}%`;
-
-          // Изменяем цвет, если значения превышают 60%
-          scaleGreen.style.backgroundColor = up >= 60 ? "#28a745" : "#155724"; // Темно-зеленый, если up > 60%
-          scaleRed.style.backgroundColor = down >= 60 ? "red" : "#721c24"; // Темно-красный, если down > 60%
-
-          // Update the UI elements with new values
-          scaleGreen.textContent = upHTML;
-          scaleRed.textContent = downHTML;
-
-          let upHTML2 = up >= 60 ? `OPEN ORDER HIGHER ` : ``;
-          let downHTML2 = down >= 60 ? `OPEN ORDER LOWER ` : ``;
-
-          percentUp.innerHTML = upHTML2;
-          percentDown.innerHTML = downHTML2;
-        }
+        //     document.getElementById("scale-container").style.display = "none";
+        //     document.getElementById("start").disabled = false;
+        //   });
+        // });
       </script>
     </div>
   </body>
